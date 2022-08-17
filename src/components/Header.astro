@@ -1,0 +1,26 @@
+---
+const links = [
+	{
+		name: "Home",
+		url: "/",
+	},
+	{
+		name: "Profile",
+		url: "/profile",
+	},
+];
+---
+
+<header>
+	<ul>
+		{
+			links.map((link) => (
+				<>
+					<li>
+						<a href={link.url}>{link.name}</a>
+					</li>
+				</>
+			))
+		}
+	</ul>
+</header>
